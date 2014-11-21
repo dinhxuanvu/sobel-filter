@@ -1,7 +1,6 @@
-
 -------------------------------------------------------------------------------
--- File: sobel_algorithm.vhd
--- Entity: sobel_algorithm
+-- File: algorithm.vhd
+-- Entity: algorithm
 -- Architecture: Behavioral
 -- Author: Drew Carlstedt
 -- Created: 11/20/2014
@@ -13,19 +12,20 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
-entity sobel_algorithm is
+entity algorithm is
   port
   (
-    i_d     :    in  std_logic_vector(15 downto 0);
-    i_dir   :    out std_logic_vector(1 downto 0);
-    o_dir   :    out std_logic_vector(1 downto 0);
-    o_edge  :    out std_logic
+    i_valid      :    in  std_logic;
+    i_d          :    in  std_logic_vector(15 downto 0);
+    i_dir        :    out std_logic_vector(2 downto 0);
+    o_edge       :    out std_logic;
+    o_dir        :    out std_logic_vector(2 downto 0)
   );
-end sobel_algorithm;
+end algorithm;
 
 -------------------------------------------------------------------------------
 
-architecture behavioral of sobel_algorithm is
+architecture behavioral of algorithm is
   
 begin
   

@@ -1,13 +1,14 @@
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 -- File: adder.vhd
 -- Entity: adder
 -- Architecture: Behavioral
 -- Author: Drew Carlstedt
 -- Created: 11/20/2014
 -- VHDL'93
--- Description: The following is the entity and architecture of a 4-bit adder
+-- Description:
+-- The following is the entity and architecture of an 8-bit adder
 -- (stub for optimized tree adder)
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -17,13 +18,14 @@ use ieee.std_logic_unsigned.all;
 entity adder is
   port
   (
-    i_x    :    in  std_logic_vector(7 downto 0);
-    i_y    :    in  std_logic_vector(7 downto 0);
-    o_z    :    out std_logic_vector(7 downto 0);
-    o_c    :    out std_logic
+    i_valid      :    in  std_logic;
+    i_x          :    in  std_logic_vector(7 downto 0);
+    i_y          :    in  std_logic_vector(7 downto 0);
+    o_z          :    out std_logic_vector(7 downto 0);
+    o_c          :    out std_logic
   );
 end adder;
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 architecture behavioral of adder is
   

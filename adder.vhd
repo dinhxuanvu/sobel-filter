@@ -18,10 +18,10 @@ use ieee.std_logic_unsigned.all;
 entity adder is
   port
   (
-    i_x    :    in  std_logic_vector(7 downto 0);
-    i_y    :    in  std_logic_vector(7 downto 0);
-    o_z    :    out std_logic_vector(7 downto 0);
-    o_c    :    out std_logic
+    i_x          :    in  std_logic_vector(7 downto 0);
+    i_y          :    in  std_logic_vector(7 downto 0);
+    o_z          :    out std_logic_vector(7 downto 0);
+    o_c          :    out std_logic
   );
 end adder;
 -------------------------------------------------------------------------------

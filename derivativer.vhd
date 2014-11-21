@@ -15,9 +15,9 @@ USE ieee.std_logic_1164.ALL;
 entity derivativer is
   port
   (
-    i_ne_sw      :    in  std_logic_vector(8 downto 0);
     i_n_s        :    in  std_logic_vector(8 downto 0);
     i_e_w        :    in  std_logic_vector(8 downto 0);
+    i_ne_sw      :    in  std_logic_vector(8 downto 0);
     i_nw_se      :    in  std_logic_vector(8 downto 0);
     o_d_n_e      :    out std_logic_vector(15 downto 0);
     o_d_ne_nw    :    out std_logic_vector(15 downto 0)

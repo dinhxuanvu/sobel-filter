@@ -1,31 +1,29 @@
 -------------------------------------------------------------------------------
--- File: algorithm.vhd
--- Entity: algorithm
+-- File: state.vhd
+-- Entity: state
 -- Architecture: Behavioral
 -- Author: Drew Carlstedt
 -- Created: 11/20/2014
 -- VHDL'93
--- Description: The following is the entity and architecture of a sobel
--- algorithm module
+-- Description: The following is the entity and architecture of a state machine
 -------------------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
-entity algorithm is
+entity state is
   port
   (
     i_valid      :    in  std_logic;
-    i_d          :    in  std_logic_vector(15 downto 0);
-    i_dir        :    out std_logic_vector(2 downto 0);
-    o_edge       :    out std_logic;
-    o_dir        :    out std_logic_vector(2 downto 0)
+    i_reset      :    in  std_logic;
+    o_valid      :    out std_logic;
+    o_mode       :    out std_logic_vector(1 downto 0)
   );
-end algorithm;
+end state;
 
 -------------------------------------------------------------------------------
 
-architecture behavioral of algorithm is
+architecture behavioral of state is
   
 begin
   

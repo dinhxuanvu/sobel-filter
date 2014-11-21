@@ -15,8 +15,8 @@ USE ieee.std_logic_1164.ALL;
 entity comparator is
   port
   (
-    i_d_n_e      :    out std_logic_vector(15 downto 0);
-    i_d_ne_nw    :    out std_logic_vector(15 downto 0);
+    i_d_n_e      :    in  std_logic_vector(15 downto 0);
+    i_d_ne_nw    :    in  std_logic_vector(15 downto 0);
     o_d          :    out std_logic_vector(15 downto 0);
     o_dir        :    out std_logic_vector(2 downto 0)
   );

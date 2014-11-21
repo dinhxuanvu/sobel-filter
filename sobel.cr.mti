@@ -1,29 +1,9 @@
-/home/asc2808/digicdesign/final-project/adder.vhd {2 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/adder.vhd
+/home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity adder
--- Compiling architecture behavioral of adder
-** Warning: [2] /home/asc2808/digicdesign/final-project/adder.vhd(38): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-
-} {} {}} /home/asc2808/digicdesign/final-project/derivativer.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity derivativer
--- Compiling architecture behavioral of derivativer
-
-} {} {}} /home/asc2808/digicdesign/final-project/convolver.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/convolver.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity convolver
--- Compiling architecture behavioral of convolver
+-- Compiling entity sobel
+-- Compiling architecture structural of sobel
 
 } {} {}}
