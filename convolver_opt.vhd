@@ -15,7 +15,7 @@ USE ieee.std_logic_1164.ALL;
 entity convolver is
   port
   (
-    i_valid      :    in  std_logic;
+    i_reset      :    in  std_logic;
     i_clock      :    in  std_logic;
     i_pt         :    in  std_logic_vector(8 downto 0);
     o_ne_sw      :    out std_logic_vector(8 downto 0);

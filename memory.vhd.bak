@@ -14,7 +14,7 @@ USE ieee.std_logic_1164.ALL;
 entity memory is
   port
   (
-    i_clk        :    in  std_logic;
+    i_reset      :    in  std_logic;
     i_clock      :    in  std_logic;
     i_pixel      :    in  std_logic_vector(7 downto 0);
     o_pt         :    out std_logic_vector(71 downto 0)

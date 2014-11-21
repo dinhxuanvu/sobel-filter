@@ -14,11 +14,12 @@ USE ieee.std_logic_1164.ALL;
 entity state is
   port
   (
-    i_valid      :    in  std_logic;
-    i_clock      :    in  std_logic;
     i_reset      :    in  std_logic;
+    i_clock      :    in  std_logic;
+    i_valid      :    in  std_logic;
     o_valid      :    out std_logic;
-    o_mode       :    out std_logic_vector(1 downto 0)
+    o_mode       :    out std_logic_vector(1 downto 0);
+    o_reset      :    out std_logic
   );
 end state;
 
@@ -28,27 +29,26 @@ architecture behavioral of state is
   
 begin
   
-  process (i_clock)
+  state: process (i_clock)
   
   begin
-  if (rising_edge(i_clock) then
-    if (i_valid) then
-      -- FIXME need to calculate cycles it takes to get a good output
-      -- also this "valid" needs to stay valid for entire time in busy mode
-      -- but the o_valid for sobel is only valid for one clock cycle...
-      -- ... maybe output a reset bit for the other modules as well?
-      o_valid <= '1';
+   
+  if (rising_edge(i_clock)) then
+    o_reset <= '1';
+    if (i_valid='1') then
       o_mode <= "11";
+      -- FIXME need to calculate cycles it takes to get a good output
+      o_valid <= '1';
     else
       o_valid <= '0';
       o_mode <= "10";
     end if;
-    if (i_reset) then
+    if (i_reset='1') then
       o_valid <= '0';
-      o_mode <= "01"
+      o_mode <= "01";
     end if;
   end if;
-  end process;
+  end process state;
   
 end behavioral;
 

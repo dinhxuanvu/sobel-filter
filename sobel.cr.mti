@@ -1,4 +1,86 @@
-/home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
+/home/asc2808/digicdesign/final-project/algorithm.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/algorithm.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity algorithm
+-- Compiling architecture behavioral of algorithm
+
+} {} {}} /home/asc2808/digicdesign/final-project/comparator.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/comparator.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator
+-- Compiling architecture behavioral of comparator
+
+} {} {}} /home/asc2808/digicdesign/final-project/adder.vhd {2 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/adder.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity adder
+-- Compiling architecture behavioral of adder
+** Warning: [2] /home/asc2808/digicdesign/final-project/adder.vhd(40): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+} {} {}} /home/asc2808/digicdesign/final-project/derivativer.vhd {0 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity derivativer
+-- Compiling architecture behavioral of derivativer
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in left operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad expression in right operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(38): Bad right hand side (infix expression) in signal assignment.
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in left operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad expression in right operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(40): Bad right hand side (infix expression) in signal assignment.
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in left operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad expression in right operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(42): Bad right hand side (infix expression) in signal assignment.
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Illegal target for signal assignment.
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): No feasible entries for infix operator "*".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in right operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in left operand of infix expression "+".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in left operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): Bad expression in right operand of infix expression "-".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(44): (vcom-1136) Unknown identifier "o_d_nw_se".
+** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(49): VHDL Compiler exiting
+
+} {8.0 46.0} {}} /home/asc2808/digicdesign/final-project/state.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/state.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity state
+-- Compiling architecture behavioral of state
+
+} {} {}} /home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO

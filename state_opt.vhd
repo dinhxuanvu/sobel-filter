@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File: state.vhd
+-- File: state_opt.vhd
 -- Entity: state
 -- Architecture: Behavioral
 -- Author: Drew Carlstedt
@@ -30,18 +30,21 @@ architecture behavioral of state is
 begin
   
   state: process (i_clock)
-  
+  -- FIXME need to do some more logic for when reset is high/low
   begin
   if (rising_edge(i_clock)) then
     if (i_valid='1') then
+      o_reset <= '0';
       o_mode <= "11";
       -- FIXME need to calculate cycles it takes to get a good output
+      -- o_valid '1' for ONE clock cycle
       o_valid <= '1';
     else
       o_valid <= '0';
       o_mode <= "10";
     end if;
     if (i_reset='1') then
+      o_reset <= '1';
       o_valid <= '0';
       o_mode <= "01";
     end if;
