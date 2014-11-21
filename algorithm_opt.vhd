@@ -16,6 +16,7 @@ entity algorithm is
   port
   (
     i_valid      :    in  std_logic;
+    i_clock      :    in  std_logic;
     i_d          :    in  std_logic_vector(15 downto 0);
     i_dir        :    out std_logic_vector(2 downto 0);
     o_edge       :    out std_logic;

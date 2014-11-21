@@ -16,6 +16,7 @@ entity convolver is
   port
   (
     i_valid      :    in  std_logic;
+    i_clk        :    in  std_logic;
     i_pt         :    in  std_logic_vector(8 downto 0);
     o_ne_sw      :    out std_logic_vector(8 downto 0);
     o_n_s        :    out std_logic_vector(8 downto 0);

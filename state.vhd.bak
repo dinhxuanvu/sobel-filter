@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- File: derivativer.vhd
+-- File: state.vhd
 -- Entity: state
 -- Architecture: Behavioral
 -- Author: Drew Carlstedt
@@ -15,6 +15,7 @@ entity state is
   port
   (
     i_valid      :    in  std_logic;
+    i_clock      :    in  std_logic;
     i_reset      :    in  std_logic;
     o_valid      :    out std_logic;
     o_mode       :    out std_logic_vector(1 downto 0)
@@ -27,5 +28,10 @@ architecture behavioral of state is
   
 begin
   
+  process
+    
+  begin
+    
+  end process;
 end behavioral;
 

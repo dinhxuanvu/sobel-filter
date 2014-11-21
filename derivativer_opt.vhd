@@ -16,6 +16,7 @@ entity derivativer is
   port
   (
     i_valid      :    in  std_logic;
+    i_clock      :    in  std_logic;
     i_n_s        :    in  std_logic_vector(8 downto 0);
     i_e_w        :    in  std_logic_vector(8 downto 0);
     i_ne_sw      :    in  std_logic_vector(8 downto 0);

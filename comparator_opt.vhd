@@ -16,6 +16,7 @@ entity comparator is
   port
   (
     i_valid      :    in  std_logic;
+    i_clock      :    in  std_logic;
     i_d_n_e      :    in  std_logic_vector(15 downto 0);
     i_d_ne_nw    :    in  std_logic_vector(15 downto 0);
     o_d          :    out std_logic_vector(15 downto 0);
