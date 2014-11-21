@@ -28,7 +28,7 @@ architecture behavioral of state is
   
 begin
   
-  process
+  process (i_clock)
     
   begin
     

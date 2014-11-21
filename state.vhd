@@ -29,9 +29,26 @@ architecture behavioral of state is
 begin
   
   process (i_clock)
-    
+  
   begin
-    
+  if (rising_edge(i_clock) then
+    if (i_valid) then
+      -- FIXME need to calculate cycles it takes to get a good output
+      -- also this "valid" needs to stay valid for entire time in busy mode
+      -- but the o_valid for sobel is only valid for one clock cycle...
+      -- ... maybe output a reset bit for the other modules as well?
+      o_valid <= '1';
+      o_mode <= "11";
+    else
+      o_valid <= '0';
+      o_mode <= "10";
+    end if;
+    if (i_reset) then
+      o_valid <= '0';
+      o_mode <= "01"
+    end if;
+  end if;
   end process;
+  
 end behavioral;
 
