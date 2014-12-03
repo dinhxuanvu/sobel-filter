@@ -2,7 +2,7 @@
 -- File: adder.vhd
 -- Entity: adder
 -- Architecture: Behavioral
--- Author: Drew Carlstedt
+-- Author: Drew Carlstedt, Vu Dinh
 -- Created: 11/20/2014
 -- VHDL'93
 -- Description:
@@ -20,9 +20,10 @@ entity adder is
   (
     i_reset      :    in  std_logic;
     i_clock      :    in  std_logic;
-    i_x          :    in  std_logic_vector(7 downto 0);
-    i_y          :    in  std_logic_vector(7 downto 0);
-    o_z          :    out std_logic_vector(7 downto 0);
+    i_c          :    in  std_logic;
+    i_x          :    in  std_logic_vector(8 downto 0);
+    i_y          :    in  std_logic_vector(8 downto 0);
+    o_z          :    out std_logic_vector(8 downto 0);
     o_c          :    out std_logic
   );
 end adder;
@@ -34,7 +35,7 @@ begin
   add: process
     variable temp : std_logic_vector(8 downto 0);
   begin
-    temp := std_logic_vector(unsigned("0" & i_x) + unsigned("0" & i_y));
+    temp := std_logic_vector(unsigned("0" & i_x) + unsigned("0" & i_y) + unsigned ("0000000" & i_c));
     o_z <= temp(7 downto 0);
     o_c <= temp(8);
   end process add;
