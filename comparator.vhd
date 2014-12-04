@@ -13,21 +13,14 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 use ieee.std_logic_signed.all;
 
-
 entity comparator is
   port
   (
     i_enable     :    in  std_logic;
     i_clock      :    in  std_logic;
-<<<<<<< HEAD
     i_d_n_e      :    in  std_logic_vector(21 downto 0);
     i_d_ne_nw    :    in  std_logic_vector(21 downto 0);
     o_d          :    out std_logic_vector(21 downto 0);
-=======
-    i_d_n_e      :    in  std_logic_vector(17 downto 0);
-    i_d_ne_nw    :    in  std_logic_vector(17 downto 0);
-    o_d          :    out std_logic_vector(17 downto 0);
->>>>>>> ed2a51b62bd69671cb072b2209f97bb633ee2b18
     o_dir        :    out std_logic_vector(2 downto 0)
   );
 end comparator;
@@ -36,20 +29,24 @@ end comparator;
 
 architecture behavioral of comparator is
 
-  signal s_d_n, s_d_e, s_d_ne, s_d_nw : std_logic_vector(10 downto 0);
+  
 
 begin
   
   compare: process(i_clock)
+  variable s_d_n, s_d_e, s_d_ne, s_d_nw : std_logic_vector(10 downto 0);
   variable d_n, d_ne                : std_logic_vector(10 downto 0);
   variable d_max                    : std_logic_vector(21 downto 0);
   variable dir_n, dir_ne, dir_max   : std_logic_vector(2 downto 0);
   
   begin
-    s_d_n   <= i_d_n_e(21 downto 11);
-    s_d_e   <= i_d_n_e(10 downto 0);
-    s_d_ne  <= i_d_ne_nw(21 downto 11);
-    s_d_nw  <= i_d_ne_nw(10 downto 0);
+ 
+  if (rising_edge(i_clock)) then
+    
+    s_d_n   := i_d_n_e(21 downto 11);
+    s_d_e   := i_d_n_e(10 downto 0);
+    s_d_ne  := i_d_ne_nw(21 downto 11);
+    s_d_nw  := i_d_ne_nw(10 downto 0);
     
     -- compare N and E
     if ( s_d_n < s_d_e ) then
@@ -90,6 +87,8 @@ begin
     
     o_d <= d_max;
     
+  end if;  
+  
   end process compare;
   
 end behavioral;
