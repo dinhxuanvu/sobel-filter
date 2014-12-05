@@ -17,7 +17,7 @@ entity memory is
     i_reset      :    in  std_logic;
     i_clock      :    in  std_logic;
     i_pixel      :    in  std_logic_vector(7 downto 0);
-    o_pt         :    out std_logic_vector(71 downto 0)
+    o_ct         :    out std_logic_vector(71 downto 0)
   );
 end memory;
 

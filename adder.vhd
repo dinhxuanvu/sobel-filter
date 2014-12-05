@@ -18,9 +18,9 @@ use ieee.std_logic_unsigned.all;
 entity adder is
   port
   (
-    i_reset      :    in  std_logic;
+    i_enable     :    in  std_logic;
     i_clock      :    in  std_logic;
-    i_c          :    in  std_logic;
+    i_c          :    in  std_logic_vector(0 downto 0);
     i_x          :    in  std_logic_vector(8 downto 0);
     i_y          :    in  std_logic_vector(8 downto 0);
     o_z          :    out std_logic_vector(8 downto 0);
@@ -32,12 +32,14 @@ end adder;
 architecture behavioral of adder is
   
 begin
-  add: process
-    variable temp : std_logic_vector(8 downto 0);
+  add: process (i_clock)
+    variable temp : std_logic_vector(9 downto 0);
   begin
-    temp := std_logic_vector(unsigned("0" & i_x) + unsigned("0" & i_y) + unsigned ("0000000" & i_c));
-    o_z <= temp(7 downto 0);
-    o_c <= temp(8);
+    if (rising_edge(i_clock)) then
+      temp := std_logic_vector( unsigned("0" & i_x) + unsigned("0" & i_y) + unsigned("00000000" & i_c));
+      o_z <= temp(8 downto 0);
+      o_c <= temp(9);
+    end if;
   end process add;
   
 end behavioral;

@@ -3,10 +3,12 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
 -- Compiling entity algorithm
 -- Compiling architecture behavioral of algorithm
 
-} {} {}} /home/asc2808/digicdesign/final-project/adder.vhd {0 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/adder.vhd
+} {} {}} /home/asc2808/digicdesign/final-project/adder.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/adder.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -16,13 +18,62 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity adder
 -- Compiling architecture behavioral of adder
-** Error: /home/asc2808/digicdesign/final-project/adder.vhd(38): Ambiguous type in infix expression; ieee.std_logic_1164.STD_LOGIC_VECTOR or ieee.std_logic_1164.STD_ULOGIC_VECTOR.
-** Error: /home/asc2808/digicdesign/final-project/adder.vhd(38): Illegal type conversion to ieee.NUMERIC_STD.UNSIGNED (operand type is not known).
-** Warning: [2] /home/asc2808/digicdesign/final-project/adder.vhd(41): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-** Error: /home/asc2808/digicdesign/final-project/adder.vhd(39): (vcom-1272) Length of expected is 9; length of slice name is 8.
-** Error: /home/asc2808/digicdesign/final-project/adder.vhd(43): VHDL Compiler exiting
 
-} {11.0 13.0 14.0 16.0} {}} /home/asc2808/digicdesign/final-project/tb_comparator.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/tb_comparator.vhd
+} {} {}} /home/asc2808/digicdesign/final-project/algorithm_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/algorithm_tb.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Compiling entity algorithm_tb
+-- Compiling architecture behavioral of algorithm_tb
+
+} {} {}} /home/asc2808/digicdesign/final-project/comparator.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/comparator.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity comparator
+-- Compiling architecture behavioral of comparator
+
+} {} {}} /home/asc2808/digicdesign/final-project/memory.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memory
+-- Compiling architecture behavioral of memory
+
+} {} {}} /home/asc2808/digicdesign/final-project/derivativer.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity derivativer
+-- Compiling architecture behavioral of derivativer
+
+} {} {}} /home/asc2808/digicdesign/final-project/state.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/state.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity state
+-- Compiling architecture behavioral of state
+
+} {} {}} /home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sobel
+-- Compiling architecture structural of sobel
+
+} {} {}} /home/asc2808/digicdesign/final-project/tb_comparator.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/tb_comparator.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -33,106 +84,22 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Compiling entity tb_comparator
 -- Compiling architecture behavioral of tb_comparator
 
-} {} {}} /home/asc2808/digicdesign/final-project/memory.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory.vhd
+} {} {}} /home/asc2808/digicdesign/final-project/memory_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory_tb.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity memory
--- Compiling architecture behavioral of memory
+-- Compiling entity memory_tb
+-- Compiling architecture behavioral of memory_tb
 
-} {} {}} /home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
+} {} {}} /home/asc2808/digicdesign/final-project/derivativer_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer_tb.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity sobel
--- Compiling architecture structural of sobel
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity derivativer_tb
+-- Compiling architecture behavioral of derivativer_tb
 
-} {} {}} /home/asc2808/digicdesign/final-project/state.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/state.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity state
--- Compiling architecture behavioral of state
-
-} {} {}} /home/asc2808/digicdesign/final-project/derivativer.vhd {0 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity derivativer
--- Compiling architecture behavioral of derivativer
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(67): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(67): (vcom-1136) Unknown identifier "resize".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(68): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(68): (vcom-1136) Unknown identifier "resize".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(70): Illegal sequential statement.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(70): (vcom-1436) Actual expression (variable "mult_temp1") of formal "i_y" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(70): (vcom-1454) Formal "o_z" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(70): (vcom-1454) Formal "o_c" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(71): Illegal sequential statement.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(71): (vcom-1436) Actual expression (variable "cout_temp1") of formal "i_c" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(71): (vcom-1436) Actual expression (variable "sum_temp1") of formal "i_y" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(71): (vcom-1454) Formal "o_z" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(71): (vcom-1454) Formal "o_c" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(73): Illegal sequential statement.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(73): (vcom-1436) Actual expression (variable "mult_temp2") of formal "i_y" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(73): (vcom-1454) Formal "o_z" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(73): (vcom-1454) Formal "o_c" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(74): Illegal sequential statement.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(74): (vcom-1436) Actual expression (variable "cout_temp3") of formal "i_c" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(74): (vcom-1436) Actual expression (variable "sum_temp3") of formal "i_y" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(74): (vcom-1454) Formal "o_z" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(74): (vcom-1454) Formal "o_c" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(78): Illegal sequential statement.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(78): (vcom-1436) Actual expression (variable "cout_temp1") of formal "i_c" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(78): (vcom-1436) Actual expression (variable "mult_temp1") of formal "i_y" is not globally static.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(78): (vcom-1454) Formal "o_z" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(78): (vcom-1454) Formal "o_c" of mode OUT cannot be associated with an expression.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in left operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad expression in right operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(80): Bad right hand side (infix expression) in signal assignment.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in left operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad expression in right operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(82): Bad right hand side (infix expression) in signal assignment.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in left operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad expression in right operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(84): Bad right hand side (infix expression) in signal assignment.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Illegal target for signal assignment.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): No feasible entries for infix operator "*".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in right operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in left operand of infix expression "+".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in left operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): Bad expression in right operand of infix expression "-".
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(86): (vcom-1136) Unknown identifier "o_d_nw_se".
-** Warning: [14] /home/asc2808/digicdesign/final-project/derivativer.vhd(70): (vcom-1272) Length of formal "i_x" is 10; length of slice name is 8.
-** Warning: [14] /home/asc2808/digicdesign/final-project/derivativer.vhd(71): (vcom-1272) Length of formal "i_x" is 10; length of slice name is 8.
-** Warning: [14] /home/asc2808/digicdesign/final-project/derivativer.vhd(73): (vcom-1272) Length of formal "i_x" is 10; length of slice name is 8.
-** Warning: [14] /home/asc2808/digicdesign/final-project/derivativer.vhd(74): (vcom-1272) Length of formal "i_x" is 10; length of slice name is 8.
-** Warning: [14] /home/asc2808/digicdesign/final-project/derivativer.vhd(78): (vcom-1272) Length of formal "i_x" is 10; length of slice name is 8.
-** Error: /home/asc2808/digicdesign/final-project/derivativer.vhd(91): VHDL Compiler exiting
-
-} {8.0 72.0 77.0 78.0} {}}
+} {} {}}

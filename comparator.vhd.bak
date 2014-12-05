@@ -43,10 +43,10 @@ begin
  
   if (rising_edge(i_clock)) then
     
-    s_d_n   <= i_d_n_e(21 downto 11);
-    s_d_e   <= i_d_n_e(10 downto 0);
-    s_d_ne  <= i_d_ne_nw(21 downto 11);
-    s_d_nw  <= i_d_ne_nw(10 downto 0);
+    s_d_n   := i_d_n_e(21 downto 11);
+    s_d_e   := i_d_n_e(10 downto 0);
+    s_d_ne  := i_d_ne_nw(21 downto 11);
+    s_d_nw  := i_d_ne_nw(10 downto 0);
     
     -- compare N and E
     if ( s_d_n < s_d_e ) then
