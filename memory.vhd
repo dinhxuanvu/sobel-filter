@@ -2,7 +2,7 @@
 -- File: memory.vhd
 -- Entity: memory
 -- Architecture: Behavioral
--- Author: Drew Carlstedt, Vu Dinh
+-- Author: Drew Carlstedt
 -- Created: 11/20/2014
 -- VHDL'93
 -- Description: The following is the entity and architecture of a shift register
@@ -10,21 +10,16 @@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_signed.all;
 
 entity memory is
   port
   (
+    i_reset      :    in  std_logic;
     i_enable     :    in  std_logic;
     i_clock      :    in  std_logic;
-    i_pixel0     :    in  std_logic_vector(7 downto 0);
-    i_pixel1     :    in  std_logic_vector(7 downto 0);
-    i_pixel2     :    in  std_logic_vector(7 downto 0);
-    i_pixel3     :    in  std_logic_vector(7 downto 0);
-    i_pixel4     :    in  std_logic_vector(7 downto 0);
-    i_pixel5     :    in  std_logic_vector(7 downto 0);
-    i_pixel6     :    in  std_logic_vector(7 downto 0);
-    i_pixel7     :    in  std_logic_vector(7 downto 0);
-    i_pixel8     :    in  std_logic_vector(7 downto 0);
+    i_pixel      :    in  std_logic_vector(7 downto 0);
     o_ct         :    out std_logic_vector(71 downto 0)
   );
 end memory;
@@ -34,20 +29,44 @@ end memory;
 -- | 47 downto 40 | 39 downto 32 | 31 downto 24 |
 -- | 23 downto 16 | 15 downto 8  |  7 downto 0  |
 architecture behavioral of memory is
-  
+  signal s_count : std_logic_vector(3 downto 0);
 begin
+  
   mem : process (i_clock)
+  variable count : std_logic_vector(3 downto 0);
   begin
     if (rising_edge(i_clock)) then
-      o_ct(7 downto 0) <= i_pixel0;
-      o_ct(15 downto 8) <= i_pixel1;
-      o_ct(23 downto 16) <= i_pixel2;
-      o_ct(31 downto 24) <= i_pixel3;
-      o_ct(39 downto 32) <= i_pixel4;
-      o_ct(47 downto 40) <= i_pixel5;
-      o_ct(55 downto 48) <= i_pixel6;
-      o_ct(63 downto 56) <= i_pixel7;
-      o_ct(71 downto 64) <= i_pixel8;
+      if (i_reset = '1') then
+        count := "0000";
+        o_ct <= "000000000000000000000000000000000000000000000000000000000000000000000000";
+      else
+        if (unsigned(count) >= 9) then
+          count := "0001";
+        else
+          count := std_logic_vector(unsigned(count) + 1);
+        end if;
+          case count is
+            when "0001"  =>
+              o_ct(7 downto 0)  <= i_pixel;
+            when "0010"  =>
+              o_ct(15 downto 8) <= i_pixel;
+            when "0011"  =>
+              o_ct(23 downto 16) <= i_pixel;
+            when "0100"  =>
+              o_ct(31 downto 24) <= i_pixel;
+            when "0101"  =>
+              o_ct(39 downto 32) <= i_pixel;
+            when "0110"  =>
+              o_ct(47 downto 40) <= i_pixel;
+            when "0111"  =>
+              o_ct(55 downto 48) <= i_pixel;
+            when "1000"  =>
+              o_ct(63 downto 56) <= i_pixel;
+            when others  =>
+              o_ct(71 downto 64) <= i_pixel;
+          end case;
+      end if;
     end if;
+    s_count <= count;
   end process;
 end behavioral;

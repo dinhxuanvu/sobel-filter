@@ -23,7 +23,6 @@ component algorithm is
  port
   (
     i_enable     :    in  std_logic;
-    i_clock      :    in  std_logic;
     i_d          :    in  std_logic_vector(21 downto 0);
     i_dir        :    in std_logic_vector(2 downto 0);
     o_edge       :    out std_logic;
@@ -46,7 +45,7 @@ file INFILE: TEXT open READ_MODE is "algorithm_data";
 -- XXXXXXXXXXXXXXXXXXXXXX XXX X XXX
 -- XXXXXXXXXXXXXXXXXXXXXX XXX X XXX
 begin
-UUT: algorithm port map (s_i_enable, s_clk, s_i_d, s_i_dir, s_o_edge, s_o_dir);
+UUT: algorithm port map (s_i_enable, s_i_d, s_i_dir, s_o_edge, s_o_dir);
   
   test : process
   

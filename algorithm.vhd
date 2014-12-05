@@ -17,7 +17,6 @@ entity algorithm is
   port
   (
     i_enable     :    in  std_logic;
-    i_clock      :    in  std_logic;
     i_d          :    in  std_logic_vector(21 downto 0);
     i_dir        :    in std_logic_vector(2 downto 0);
     o_edge       :    out std_logic;
@@ -29,22 +28,20 @@ end algorithm;
 
 architecture behavioral of algorithm is
 begin
-  algo : process(i_clock)
+  algo : process(i_d,i_dir)
   variable temp1 : std_logic_vector(10 downto 0);
   variable temp2 : std_logic_vector(10 downto 0);
   variable total : std_logic_vector(10 downto 0);
   begin
-    if (rising_edge(i_clock)) then
-      temp1 := abs(i_d(21 downto 11));
-      temp2 := abs(i_d(10 downto 0));
-      total := (temp1 + ("000" & temp2(10 downto 3)));
-      if (total >= 80) then
-        o_edge <= '1';
-        o_dir <= i_dir;
-      else
-        o_edge <= '0';
-        o_dir <= "000";
-      end if;
+    temp1 := abs(i_d(21 downto 11));
+    temp2 := abs(i_d(10 downto 0));
+    total := (temp1 + ("000" & temp2(10 downto 3)));
+    if (total >= 80) then
+      o_edge <= '1';
+      o_dir <= i_dir;
+    else
+      o_edge <= '0';
+      o_dir <= "000";
     end if;
   end process;
 end behavioral;

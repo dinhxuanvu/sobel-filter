@@ -1,0 +1,9 @@
+vsim work.memory_tb
+add wave -position insertpoint  \
+sim/:memory_tb:s_clk \
+sim/:memory_tb:s_i_reset \
+sim/:memory_tb:s_i_pixel \
+sim/:memory_tb:s_o_ct \
+sim/:memory_tb:UUT:s_count
+
+run 1200ns

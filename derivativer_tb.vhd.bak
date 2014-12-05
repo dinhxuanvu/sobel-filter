@@ -20,7 +20,7 @@ architecture behavioral of derivativer_tb is
 component derivativer is
   port
   (
-    i_reset      :    in  std_logic;
+    i_enable     :    in  std_logic;
     i_clock      :    in  std_logic;
     i_ct         :    in  std_logic_vector(71 downto 0);
     o_d_n_e      :    out std_logic_vector(21 downto 0);
@@ -30,7 +30,7 @@ end component;
 
 constant  period  :   time := 50 ns;
 constant  delay   :   time := 10 ns;
-signal s_i_reset      :    std_logic;
+signal s_i_enable      :    std_logic;
 signal s_clk      :    std_logic;
 
 signal s_i_ct         :    std_logic_vector(71 downto 0);
@@ -45,11 +45,11 @@ signal s_o_d_ne_nw_1  :    std_logic_vector(10 downto 0);
 signal s_o_d_ne_nw_2  :    std_logic_vector(10 downto 0);
 
 begin
-UUT: derivativer port map (s_i_reset, s_clk, s_i_ct, s_o_d_n_e, s_o_d_ne_nw);
+UUT: derivativer port map (s_i_enable, s_clk, s_i_ct, s_o_d_n_e, s_o_d_ne_nw);
   
 test: process
 begin
-  s_i_reset <= '0';
+  s_i_enable <= '0';
   
   -- 150 255 15
   -- 120 250 50

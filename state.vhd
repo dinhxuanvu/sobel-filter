@@ -32,28 +32,29 @@ architecture behavioral of state is
 begin
   
   state: process (i_clock)
-  variable count : std_logic_vector(3 downto 0) := "0000";
+  variable count : std_logic_vector(3 downto 0);
   begin 
-  if (rising_edge(i_clock)) then
-    if (i_valid='1') then
-      o_mode <= "11";
-      -- count to 9 pixels
-      count := std_logic_vector(unsigned(count) + 1);
-      if (count >= 9) then
+    if (rising_edge(i_clock)) then
+      if (i_reset='1') then
+        o_valid <= '0';
+        o_mode <= "01";
         count := "0000";
-      -- FIXME need to calculate cycles it takes to get a good output
-      -- FIXED? all the logic is contained within one clock cycle
-        o_valid <= '1';
+      else
+        if (i_valid='1') then
+          o_mode <= "11";
+          -- count to 9 pixels
+          if (unsigned(count) >= 9) then
+            count := "0001";-- all the logic is contained within one clock cycle
+            o_valid <= '1';
+          else
+            count := std_logic_vector(unsigned(count) + 1);
+          end if;
+        else
+          o_valid <= '0';
+          o_mode <= "10";
+        end if;
       end if;
-    else
-      o_valid <= '0';
-      o_mode <= "10";
     end if;
-    if (i_reset='1') then
-      o_valid <= '0';
-      o_mode <= "01";
-    end if;
-  end if;
   end process state;
   
 end behavioral;

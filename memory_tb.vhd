@@ -10,6 +10,10 @@
 -------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+use IEEE.STD_LOGIC_TEXTIO.ALL;
+use STD.TEXTIO.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_signed.all;
 
 entity memory_tb is
 end memory_tb;
@@ -19,82 +23,57 @@ architecture behavioral of memory_tb is
 component memory is
   port
   (
+    i_reset       :    in  std_logic;
     i_enable      :    in  std_logic;
     i_clock       :    in  std_logic;
-    i_pixel0      :    in  std_logic_vector(7 downto 0);
-    i_pixel1      :    in  std_logic_vector(7 downto 0);
-    i_pixel2      :    in  std_logic_vector(7 downto 0);
-    i_pixel3      :    in  std_logic_vector(7 downto 0);
-    i_pixel4      :    in  std_logic_vector(7 downto 0);
-    i_pixel5      :    in  std_logic_vector(7 downto 0);
-    i_pixel6      :    in  std_logic_vector(7 downto 0);
-    i_pixel7      :    in  std_logic_vector(7 downto 0);
-    i_pixel8      :    in  std_logic_vector(7 downto 0);
+    i_pixel       :    in  std_logic_vector(7 downto 0);
     o_ct          :    out std_logic_vector(71 downto 0)
   );
 end component;
 
-constant  period  :   time := 50 ns;
-constant  delay   :   time := 10 ns;
+constant  period  :    time := 50 ns;
+constant  delay   :    time := 10 ns;
+
+signal s_i_reset  :    std_logic;
 signal s_i_enable :    std_logic;
 signal s_clk      :    std_logic;
+signal s_i_pixel  :    std_logic_vector(7 downto 0);
+signal s_o_ct     :    std_logic_vector(71 downto 0);
 
-signal s_i_pixel0      :    std_logic_vector(7 downto 0);
-signal s_i_pixel1      :    std_logic_vector(7 downto 0);
-signal s_i_pixel2      :    std_logic_vector(7 downto 0);
-signal s_i_pixel3      :    std_logic_vector(7 downto 0);
-signal s_i_pixel4      :    std_logic_vector(7 downto 0);
-signal s_i_pixel5      :    std_logic_vector(7 downto 0);
-signal s_i_pixel6      :    std_logic_vector(7 downto 0);
-signal s_i_pixel7      :    std_logic_vector(7 downto 0);
-signal s_i_pixel8      :    std_logic_vector(7 downto 0);
-
-signal s_o_ct          :    std_logic_vector(71 downto 0);
-
-signal pixel0      :    std_logic_vector(7 downto 0);
-signal pixel1      :    std_logic_vector(7 downto 0);
-signal pixel2      :    std_logic_vector(7 downto 0);
-signal pixel3      :    std_logic_vector(7 downto 0);
-signal pixel4      :    std_logic_vector(7 downto 0);
-signal pixel5      :    std_logic_vector(7 downto 0);
-signal pixel6      :    std_logic_vector(7 downto 0);
-signal pixel7      :    std_logic_vector(7 downto 0);
-signal pixel8      :    std_logic_vector(7 downto 0);
+signal s_count    :    std_logic_vector(3 downto 0);
+file INFILE: TEXT open READ_MODE is "memory_data";
+-- pixel[7:0]     convolution table[71:0]
+---  XXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
 
 begin
-UUT: memory port map (s_i_enable, s_clk, s_i_pixel0, s_i_pixel1, s_i_pixel2, 
-s_i_pixel3, s_i_pixel4, s_i_pixel5, s_i_pixel6, s_i_pixel7, s_i_pixel8, s_o_ct);
+UUT: memory port map (s_i_reset, s_i_enable, s_clk, s_i_pixel, s_o_ct);
   
-test: process
-begin
-  s_i_enable <= '0';
+  verify : process
   
-  -- 150 255 15
-  -- 120 250 50
-  -- 75  235 75
-  
-  s_i_pixel0 <= "01001011";
-  s_i_pixel1 <= "11101011";
-  s_i_pixel2 <= "01001011";
-  s_i_pixel3 <= "00110010";
-  s_i_pixel4 <= "11111010";
-  s_i_pixel5 <= "01111000";
-  s_i_pixel6 <= "00001111";
-  s_i_pixel7 <= "11111111";
-  s_i_pixel8 <= "10010110";
-    
-  wait for delay;
-  pixel0 <= s_o_ct(7 downto 0);
-  pixel1 <= s_o_ct(15 downto 8);
-  pixel2 <= s_o_ct(23 downto 16);
-  pixel3 <= s_o_ct(31 downto 24);
-  pixel4 <= s_o_ct(39 downto 32);
-  pixel5 <= s_o_ct(47 downto 40);
-  pixel6 <= s_o_ct(55 downto 48);
-  pixel7 <= s_o_ct(63 downto 56);
-  pixel8<= s_o_ct(71 downto 64);
-  
-  end process;
+  variable    v_line       :   line; -- pointer to string
+  variable    v_i_pixel    :   STD_LOGIC_VECTOR(7 DOWNTO 0);
+  variable    v_o_ct       :   STD_LOGIC_VECTOR(71 DOWNTO 0);
+  begin
+    wait for DELAY;
+    s_i_reset <= '1';
+    wait until falling_edge(s_clk);
+    s_i_reset <= '0';
+    while not( endfile(INFILE)) loop  -- While not end of file,
+      readline(INFILE, v_line);       -- read line of a file.
+      read(v_line, v_i_pixel);    -- Each READ procedure extracts data
+      read(v_line, v_o_ct);       -- from the beginning of the string
+                                  -- value designed by parameter v_line.
+      s_i_enable   <= '1';
+      s_i_pixel    <= v_i_pixel;
+      wait for DELAY;
+      assert( v_o_ct=s_o_ct )
+        report "convolution table is not correct";
+      wait until rising_edge(s_clk);-- s_clk'EVENT;
+    end loop;
+    assert false
+      report "done";
+    wait;
+  end process verify;
 
 clock : process
 begin

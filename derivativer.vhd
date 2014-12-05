@@ -17,7 +17,6 @@ entity derivativer is
   port
   (
     i_enable     :    in  std_logic;
-    i_clock      :    in  std_logic;
     i_ct         :    in  std_logic_vector(71 downto 0);
     o_d_n_e      :    out std_logic_vector(21 downto 0);
     o_d_ne_nw    :    out std_logic_vector(21 downto 0)
@@ -32,11 +31,9 @@ architecture behavioral of derivativer is
   
 begin
   
-derivative : process (i_clock)
+derivative : process (i_ct)
 
 begin
-  
-  if rising_edge(i_clock) then
     -- N_S
     o_d_n_e(21 downto 11)   <= ((("000" & i_ct(71 downto 64)) 
                               + ("00" & i_ct(63 downto 56) & "0") 
@@ -68,7 +65,6 @@ begin
                               - (("000" & i_ct(15 downto 8)) 
                               + ("00" & i_ct(7 downto 0) & "0")
                               + ("000" & i_ct(31 downto 24))));
-    end if;
   
 end process derivative;
 

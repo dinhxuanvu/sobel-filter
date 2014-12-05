@@ -23,8 +23,8 @@ L18
 V9Rm4X^V]NB<gcYgn[<:M^0
 Z9 OL;C;10.2c_6;57
 32
-Z10 !s110 1417752791
-Z11 !s108 1417752791.089975
+Z10 !s110 1417801408
+Z11 !s108 1417801408.679162
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/adder.vhd|
 Z13 !s107 /home/asc2808/digicdesign/final-project/adder.vhd|
 Z14 o-work work -2002 -explicit
@@ -54,7 +54,7 @@ R15
 !i10b 1
 !i111 1
 Ealgorithm
-Z16 w1417743742
+Z16 w1417797162
 R1
 Z17 DPx4 ieee 16 std_logic_signed 0 22 8FY=586_D?ni<6VI>V>_P1
 R4
@@ -64,16 +64,16 @@ Z18 8/home/asc2808/digicdesign/final-project/algorithm.vhd
 Z19 F/home/asc2808/digicdesign/final-project/algorithm.vhd
 l0
 L16
-VUCYnEj@P02CJWL8dzR[T:2
+Vb08[J?S0fFz6S:3aj6^1l2
 R9
 32
-Z20 !s110 1417752792
-Z21 !s108 1417752792.103907
+Z20 !s110 1417801409
+Z21 !s108 1417801409.331928
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/algorithm.vhd|
 Z23 !s107 /home/asc2808/digicdesign/final-project/algorithm.vhd|
 R14
 R15
-!s100 175O3IUE?ogQL;5e4ZgKa0
+!s100 @@>:>U:F5a4lHCZ^ja;7>3
 !i10b 1
 !i111 1
 Abehavioral
@@ -81,10 +81,10 @@ R1
 R17
 R4
 R5
-DEx4 work 9 algorithm 0 22 UCYnEj@P02CJWL8dzR[T:2
-l31
-L30
-V5Rcm^iHWNC89Xf[F_Te:H2
+DEx4 work 9 algorithm 0 22 b08[J?S0fFz6S:3aj6^1l2
+l30
+L29
+VO<12Bho[jGzj1=9SJbj^o0
 R9
 32
 R20
@@ -93,11 +93,11 @@ R22
 R23
 R14
 R15
-!s100 4lCh<JXh?XIK2Tl]kao0d2
+!s100 `@>b<I:mI46ZS=:3VnYOC3
 !i10b 1
 !i111 1
 Ealgorithm_tb
-Z24 w1417743867
+Z24 w1417797195
 Z25 DPx4 ieee 16 std_logic_textio 0 22 E=LR>a2bb_I?VV>QDdAdh3
 R1
 R4
@@ -110,8 +110,8 @@ L17
 V^kdY:S@dS@C>cR5XPc=Co1
 R9
 32
-Z28 !s110 1417752793
-Z29 !s108 1417752793.191072
+Z28 !s110 1417801410
+Z29 !s108 1417801410.253521
 Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/algorithm_tb.vhd|
 Z31 !s107 /home/asc2808/digicdesign/final-project/algorithm_tb.vhd|
 R14
@@ -125,9 +125,9 @@ R1
 R4
 R5
 DEx4 work 12 algorithm_tb 0 22 ^kdY:S@dS@C>cR5XPc=Co1
-l48
+l47
 L20
-VJ]:6MEV:Z^]LE38ebX`hS0
+VN[]^8GN2W_h70YOZia_hR2
 R9
 32
 R28
@@ -136,7 +136,7 @@ R30
 R31
 R14
 R15
-!s100 ijAY40>dX;:d266U6_hGK1
+!s100 1?KhzN=CjN;4EnG@OhMII0
 !i10b 1
 !i111 1
 Ecomparator
@@ -153,8 +153,8 @@ L16
 V2BO>0Vi>j]KK0HoCWE><X1
 R9
 32
-R10
-Z35 !s108 1417752791.861632
+R20
+Z35 !s108 1417801409.151197
 Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/comparator.vhd|
 Z37 !s107 /home/asc2808/digicdesign/final-project/comparator.vhd|
 R14
@@ -173,7 +173,7 @@ L30
 V:;EFM;BCcC[0z4JW13<5:0
 R9
 32
-R10
+R20
 R35
 R36
 R37
@@ -222,7 +222,7 @@ R15
 !i10b 1
 !i111 1
 Ederivativer
-Z45 w1417745002
+Z45 w1417797208
 R1
 R17
 R4
@@ -232,16 +232,16 @@ Z46 8/home/asc2808/digicdesign/final-project/derivativer.vhd
 Z47 F/home/asc2808/digicdesign/final-project/derivativer.vhd
 l0
 L16
-Vk0nOMWP;DYDfUo4;Z3]X20
+VFR72P_geCb8X<jA3_6iiF3
 R9
 32
-R10
-Z48 !s108 1417752791.648240
+R20
+Z48 !s108 1417801408.895946
 Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/derivativer.vhd|
 Z50 !s107 /home/asc2808/digicdesign/final-project/derivativer.vhd|
 R14
 R15
-!s100 VzTW^i]FYI4`Vfnf<PMYV1
+!s100 Db92TVI<PX2]z7bCBQ>_10
 !i10b 1
 !i111 1
 Abehavioral
@@ -249,23 +249,23 @@ R1
 R17
 R4
 R5
-DEx4 work 11 derivativer 0 22 k0nOMWP;DYDfUo4;Z3]X20
-l33
-L31
-VX^QbaOi<AgANaN<R^>ZST1
+DEx4 work 11 derivativer 0 22 FR72P_geCb8X<jA3_6iiF3
+l32
+L30
+V8fC3ke;mYzH<oBoH]mjHd2
 R9
 32
-R10
+R20
 R48
 R49
 R50
 R14
 R15
-!s100 n69^j:PnU8I=>O13eCecz3
+!s100 7QZC[kb7?MN1WMAzXQ^nF1
 !i10b 1
 !i111 1
 Ederivativer_tb
-Z51 w1417750166
+Z51 w1417797218
 R1
 R17
 R4
@@ -279,7 +279,7 @@ V@]>8KOfMKoSf]V;O3HEAo2
 R9
 32
 R28
-Z54 !s108 1417752793.371438
+Z54 !s108 1417801410.431496
 Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/derivativer_tb.vhd|
 Z56 !s107 /home/asc2808/digicdesign/final-project/derivativer_tb.vhd|
 R14
@@ -293,9 +293,9 @@ R17
 R4
 R5
 DEx4 work 14 derivativer_tb 0 22 @]>8KOfMKoSf]V;O3HEAo2
-l47
+l46
 L18
-VeC<P79a5FDeP:DCbLmezz0
+V<2onRboFBG:NS`3PfBI;]2
 R9
 32
 R28
@@ -304,103 +304,117 @@ R55
 R56
 R14
 R15
-!s100 1`_iED<5mm9INb_hW=Nn21
+!s100 Qa]aT6QUaN8Tm^BTW<;XR1
 !i10b 1
 !i111 1
 Ememory
-Z57 w1417744906
+Z57 w1417803513
+R1
+R17
+R3
 R4
 R5
 R6
 Z58 8/home/asc2808/digicdesign/final-project/memory.vhd
 Z59 F/home/asc2808/digicdesign/final-project/memory.vhd
 l0
-L14
-V?YgM2Z8;:IJk36N;BNjEG1
+L16
+V2JPBg95GCan9I:Ua91[E_1
 R9
 32
-R20
-Z60 !s108 1417752792.831013
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/memory.vhd|
-Z62 !s107 /home/asc2808/digicdesign/final-project/memory.vhd|
+Z60 !s110 1417803547
+Z61 !s108 1417803547.037483
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/memory.vhd|
+Z63 !s107 /home/asc2808/digicdesign/final-project/memory.vhd|
 R14
 R15
-!s100 `z^N6fNllP]dP2XPk5S_43
+!s100 IWl5CPTHcleB1PdBdBCza1
 !i10b 1
 !i111 1
 Abehavioral
+R1
+R17
+R3
 R4
 R5
-DEx4 work 6 memory 0 22 ?YgM2Z8;:IJk36N;BNjEG1
-l38
-L36
-V;mEh9g26MfU<>N3HlC1360
+DEx4 work 6 memory 0 22 2JPBg95GCan9I:Ua91[E_1
+l33
+L31
+VjgF2A>DX9QE7mhl@cFiXO0
 R9
 32
-R20
 R60
 R61
 R62
+R63
 R14
 R15
-!s100 F?oYNJS_WYmk_Q5z_TTNS1
+!s100 Z^9aRe7`?9f@kYIl<6`=P3
 !i10b 1
 !i111 1
 Ememory_tb
-Z63 w1417744844
+Z64 w1417803315
+R1
+R17
+R3
+R25
 R4
 R5
 R6
-Z64 8/home/asc2808/digicdesign/final-project/memory_tb.vhd
-Z65 F/home/asc2808/digicdesign/final-project/memory_tb.vhd
+Z65 8/home/asc2808/digicdesign/final-project/memory_tb.vhd
+Z66 F/home/asc2808/digicdesign/final-project/memory_tb.vhd
 l0
-L14
-VcO`z>SgVAUKmjEMd2H<G30
+L18
+V5X8WZZD9WNm0hEd^XboHz3
+!s100 YUioF]UfRcl91nzC;@1hT0
 R9
 32
-R28
-Z66 !s108 1417752793.542089
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/memory_tb.vhd|
-Z68 !s107 /home/asc2808/digicdesign/final-project/memory_tb.vhd|
+R60
+!i10b 1
+Z67 !s108 1417803547.253169
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/memory_tb.vhd|
+Z69 !s107 /home/asc2808/digicdesign/final-project/memory_tb.vhd|
+!i111 1
 R14
 R15
-!s100 2SYa_GfejKB<f2BnDoWSM0
-!i10b 1
-!i111 1
 Abehavioral
+R1
+R17
+R3
+R25
 R4
 R5
-DEx4 work 9 memory_tb 0 22 cO`z>SgVAUKmjEMd2H<G30
-l64
-L17
-VieDW5^V71M3nV>9@S9bzF0
+Z70 DEx4 work 9 memory_tb 0 22 5X8WZZD9WNm0hEd^XboHz3
+l48
+L21
+Z71 VT`nUC3_0BQCQSa?kH?MdN0
+Z72 !s100 Tb@RLaR@ikW]58FbX3]cY1
 R9
 32
-R28
-R66
+R60
+!i10b 1
 R67
 R68
+R69
+!i111 1
 R14
 R15
-!s100 YIn7d`^h8oaDZGn`k3X8G1
-!i10b 1
-!i111 1
 Esobel
-Z69 w1417751950
+Z73 w1417751950
 R4
 R5
 R6
-Z70 8/home/asc2808/digicdesign/final-project/sobel.vhd
-Z71 F/home/asc2808/digicdesign/final-project/sobel.vhd
+Z74 8/home/asc2808/digicdesign/final-project/sobel.vhd
+Z75 F/home/asc2808/digicdesign/final-project/sobel.vhd
 l0
 L15
 V7aTGF@1M0zV6fFa7bJZka3
 R9
 32
 R20
-Z72 !s108 1417752792.282890
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel.vhd|
-Z74 !s107 /home/asc2808/digicdesign/final-project/sobel.vhd|
+Z76 !s108 1417801409.511390
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel.vhd|
+Z78 !s107 /home/asc2808/digicdesign/final-project/sobel.vhd|
 R14
 R15
 !s100 LzVkZiXYgMd7@G>cJ6`RR1
@@ -416,30 +430,30 @@ Vd[45@lE5CMZI67F29kVLi1
 R9
 32
 R20
-R72
-R73
-R74
+R76
+R77
+R78
 R14
 R15
 !s100 _LU>`j4W0L`dJHjMKe5D?0
 !i10b 1
 !i111 1
 Esobel_algorithm
-Z75 w1416502038
+Z79 w1416502038
 R4
 R5
 R6
-Z76 8/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd
-Z77 F/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd
+Z80 8/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd
+Z81 F/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd
 l0
 L16
 VL9b?ACGOXBQX53hHhbeI20
 R9
 32
-Z78 !s110 1416502064
-Z79 !s108 1416502064.231972
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd|
-Z81 !s107 /home/asc2808/digicdesign/final-project/sobel_algorithm.vhd|
+Z82 !s110 1416502064
+Z83 !s108 1416502064.231972
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel_algorithm.vhd|
+Z85 !s107 /home/asc2808/digicdesign/final-project/sobel_algorithm.vhd|
 R14
 R15
 !s100 OIfFhaliJ`jij:nWfc:am2
@@ -454,39 +468,39 @@ L28
 Vaa`bO7cCg]KVdF@O7TDX;3
 R9
 32
-R78
-R79
-R80
-R81
+R82
+R83
+R84
+R85
 R14
 R15
 !s100 c:9NR7z?:Z=hY=[QEN8aZ3
 !i10b 1
 !i111 1
 Esobel_tb
-Z82 w1417752849
+Z86 w1417752849
 R25
 R2
 R1
 R4
 R5
 R6
-Z83 8/home/asc2808/digicdesign/final-project/sobel_tb.vhd
-Z84 F/home/asc2808/digicdesign/final-project/sobel_tb.vhd
+Z87 8/home/asc2808/digicdesign/final-project/sobel_tb.vhd
+Z88 F/home/asc2808/digicdesign/final-project/sobel_tb.vhd
 l0
 L19
 VK42`Ckae>PkaiabjWcJcL1
-!s100 ZS6lk[Gfl:X]l9DfaVzgm0
 R9
 32
-Z85 !s110 1417752851
-!i10b 1
-Z86 !s108 1417752851.055572
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel_tb.vhd|
-Z88 !s107 /home/asc2808/digicdesign/final-project/sobel_tb.vhd|
-!i111 1
+R28
+Z89 !s108 1417801410.779884
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/sobel_tb.vhd|
+Z91 !s107 /home/asc2808/digicdesign/final-project/sobel_tb.vhd|
 R14
 R15
+!s100 ZS6lk[Gfl:X]l9DfaVzgm0
+!i10b 1
+!i111 1
 Abehavioral
 R25
 R2
@@ -497,36 +511,36 @@ DEx4 work 8 sobel_tb 0 22 K42`Ckae>PkaiabjWcJcL1
 l54
 L23
 V@ACI_0lU1CM[fN9W@IPVW1
-!s100 [?41?B35i>NN=e8I[@ghO0
 R9
 32
-R85
-!i10b 1
-R86
-R87
-R88
-!i111 1
+R28
+R89
+R90
+R91
 R14
 R15
+!s100 [?41?B35i>NN=e8I[@ghO0
+!i10b 1
+!i111 1
 Estate
-Z89 w1417749451
+Z92 w1417798958
 R1
 R2
 R3
 R4
 R5
 R6
-Z90 8/home/asc2808/digicdesign/final-project/state.vhd
-Z91 F/home/asc2808/digicdesign/final-project/state.vhd
+Z93 8/home/asc2808/digicdesign/final-project/state.vhd
+Z94 F/home/asc2808/digicdesign/final-project/state.vhd
 l0
 L16
 Vo3_cW4haOR4D5KN`^oaAI3
 R9
 32
 R20
-Z92 !s108 1417752792.657958
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/state.vhd|
-Z94 !s107 /home/asc2808/digicdesign/final-project/state.vhd|
+Z95 !s108 1417801409.681842
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/state.vhd|
+Z97 !s107 /home/asc2808/digicdesign/final-project/state.vhd|
 R14
 R15
 !s100 4=9XoD?;IG<1gk?O>JJ_k1
@@ -541,37 +555,37 @@ R5
 DEx4 work 5 state 0 22 o3_cW4haOR4D5KN`^oaAI3
 l32
 L30
-VI?Oo7aRHjNRI82ZL>HaMD1
+VX=?6ho`R2EbJ5K2hjbkNY2
 R9
 32
 R20
-R92
-R93
-R94
+R95
+R96
+R97
 R14
 R15
-!s100 O9LmhCGcd;h9JP@D@aZCJ0
+!s100 ;Efhc>Eh=jE_3L4ZoW2I>1
 !i10b 1
 !i111 1
 Etb_comparator
-Z95 w1417752239
+Z98 w1417752239
 R25
 R2
 R1
 R4
 R5
 R6
-Z96 8/home/asc2808/digicdesign/final-project/tb_comparator.vhd
-Z97 F/home/asc2808/digicdesign/final-project/tb_comparator.vhd
+Z99 8/home/asc2808/digicdesign/final-project/tb_comparator.vhd
+Z100 F/home/asc2808/digicdesign/final-project/tb_comparator.vhd
 l0
 L19
 VhQOkg0QPU5j8DkZh2L5lU3
 R9
 32
 R28
-Z98 !s108 1417752793.007129
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/tb_comparator.vhd|
-Z100 !s107 /home/asc2808/digicdesign/final-project/tb_comparator.vhd|
+Z101 !s108 1417801410.081830
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/asc2808/digicdesign/final-project/tb_comparator.vhd|
+Z103 !s107 /home/asc2808/digicdesign/final-project/tb_comparator.vhd|
 R14
 R15
 !s100 k;6j3?aIk0nWmDz[hPHU81
@@ -590,9 +604,9 @@ VhQ_CdaOa;OR^>fQF@6V^X0
 R9
 32
 R28
-R98
-R99
-R100
+R101
+R102
+R103
 R14
 R15
 !s100 KHKSQKlFHg^?^Tm`180d81
