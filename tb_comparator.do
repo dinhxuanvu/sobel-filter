@@ -6,4 +6,4 @@ sim/:tb_comparator:s_i_d_ne_nw \
 sim/:tb_comparator:s_o_d \
 sim/:tb_comparator:s_o_dir
 
-run 300ns
+run 400ns

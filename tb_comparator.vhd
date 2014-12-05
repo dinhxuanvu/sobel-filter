@@ -26,7 +26,6 @@ component comparator is
   port
   (
     i_enable     :    in  std_logic;
-    i_clock      :    in  std_logic;
     i_d_n_e      :    in  std_logic_vector(21 downto 0);
     i_d_ne_nw    :    in  std_logic_vector(21 downto 0);
     o_d          :    out std_logic_vector(21 downto 0);
@@ -40,15 +39,16 @@ signal s_i_d_n_e       :    std_logic_vector(21 downto 0);
 signal s_i_d_ne_nw     :    std_logic_vector(21 downto 0);
 signal s_o_d           :    std_logic_vector(21 downto 0);
 signal s_o_dir         :    std_logic_vector(2 downto 0);
-constant  period       :   time := 50 ns;
-constant  DELAY        :   time := 5 ns;
+constant  period       :    time := 50 ns;
+constant  DELAY        :    time := 5 ns;
 
 file INFILE: TEXT open READ_MODE is "tb_comparator_data";
 --    N/E DERIVATIVE         NE/NW DERIVATIVE       OUTPUT DERIVATIVE   DIRECTION
 -- XXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXX XXX -- format of the input file
 -- XXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXX XXX
+
 begin
-UUT: comparator port map (i_enable => s_i_enable, i_clock => s_clk, i_d_n_e => s_i_d_n_e, i_d_ne_nw => s_i_d_ne_nw, o_d => s_o_d, o_dir => s_o_dir);
+UUT: comparator port map (s_i_enable, s_i_d_n_e, s_i_d_ne_nw, s_o_d, s_o_dir);
   
   verify : process
   variable    v_line       :   line; -- pointer to string
@@ -58,6 +58,7 @@ UUT: comparator port map (i_enable => s_i_enable, i_clock => s_clk, i_d_n_e => s
   variable    v_o_dir      :   STD_LOGIC_VECTOR(2 DOWNTO 0);
   begin
     wait for DELAY;
+    wait until rising_edge(s_clk);
     while not( endfile(INFILE)) loop  -- While not end of file,
       readline(INFILE, v_line);       -- read line of a file.
       read(v_line, v_i_d_n_e);    -- Each READ procedure extracts data
