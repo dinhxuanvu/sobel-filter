@@ -39,6 +39,17 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Compiling entity comparator
 -- Compiling architecture behavioral of comparator
 
+} {} {}} /home/asc2808/digicdesign/final-project/state.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/state.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity state
+-- Compiling architecture behavioral of state
+
 } {} {}} /home/asc2808/digicdesign/final-project/memory.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
@@ -57,41 +68,6 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Compiling entity derivativer
 -- Compiling architecture behavioral of derivativer
 
-} {} {}} /home/asc2808/digicdesign/final-project/state.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/state.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity state
--- Compiling architecture behavioral of state
-
-} {} {}} /home/asc2808/digicdesign/final-project/sobel.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/sobel.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity sobel
--- Compiling architecture structural of sobel
-
-} {} {}} /home/asc2808/digicdesign/final-project/tb_comparator.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/tb_comparator.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package std_logic_textio
--- Compiling entity tb_comparator
--- Compiling architecture behavioral of tb_comparator
-
-} {} {}} /home/asc2808/digicdesign/final-project/memory_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory_tb.vhd
-QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity memory_tb
--- Compiling architecture behavioral of memory_tb
-
 } {} {}} /home/asc2808/digicdesign/final-project/derivativer_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/derivativer_tb.vhd
 QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STANDARD
@@ -101,5 +77,13 @@ QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
 -- Loading package STD_LOGIC_SIGNED
 -- Compiling entity derivativer_tb
 -- Compiling architecture behavioral of derivativer_tb
+
+} {} {}} /home/asc2808/digicdesign/final-project/memory_tb.vhd {1 {vcom -work work -2002 -explicit -novopt /home/asc2808/digicdesign/final-project/memory_tb.vhd
+QuestaSim-64 vcom 10.2c_6 Compiler 2013.12 Dec 17 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memory_tb
+-- Compiling architecture behavioral of memory_tb
 
 } {} {}}

@@ -35,7 +35,7 @@ component comparator is
 end component;
 
 signal s_i_enable      :    std_logic;
-signal s_clk         :    std_logic;
+signal s_clk           :    std_logic;
 signal s_i_d_n_e       :    std_logic_vector(21 downto 0);
 signal s_i_d_ne_nw     :    std_logic_vector(21 downto 0);
 signal s_o_d           :    std_logic_vector(21 downto 0);
